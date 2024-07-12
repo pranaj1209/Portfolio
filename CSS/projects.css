@@ -1,0 +1,62 @@
+/* Common */
+*{
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: whitesmoke;
+    list-style-type: none;
+}
+
+:root {
+    --clr-neutral-800: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--clr-neutral-800);
+}
+
+/* Layout for bigger devices like laptop different screen sizes */
+
+/* Layout */
+
+/* Header */
+.container{
+    padding: 1rem;
+}
+
+/* list */
+.container .navigation-bar ul{
+    list-style-type: none;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    height: 2.7rem;
+    align-items: center;
+    border-radius: 1.2rem;
+    background-color: black;
+}
+
+.icons{
+    text-decoration: none;
+    display: flex;
+    gap: .5rem;
+}
+
+#projects{
+    background-color: #e60a15;
+    font-weight: 600;
+    padding: .4rem;
+    border-radius: 1.2rem;
+}
+
+/* Main */
+.main-container{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    padding-bottom: 5rem;
+}
+
+/* row - one */

@@ -1,0 +1,374 @@
+/* Layout for bigger devices like laptop different screen sizes */
+
+/* Layout */
+
+/* Header */
+.container2{
+    padding: 1rem;
+    padding-bottom: 0px;
+}
+
+/* Navigation-bar */
+.container2 ul{
+    list-style-type: none;
+    display: flex;
+    background-color: black;
+    padding: 0px;
+    justify-content: space-around;
+    border-radius: 25px;
+    height: 2.9rem;
+    align-items: center;
+}
+
+/* navigation-bar items: list */
+#home{
+    text-decoration: none;
+    background-color: #e60a15;
+    font-weight: 600;
+    padding: .4rem;
+    border-radius: 25px;
+}
+
+.icons{
+    text-decoration: none;
+}
+
+/* Main Layout */
+.container{
+    /* height: 500px; */
+    /* border: solid black 5px; */
+    gap: 0.7rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+/* Main Layout first part */
+#row1{
+    /* border: solid purple 5px; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+/* Main Layout second part */
+#row2{
+    /* border: solid gold 5px; */
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 1fr;
+    gap: 0.7rem;
+}
+
+/* row 1 */
+/* col 1 content */
+#col1 div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 15px;
+}
+
+span{
+    color: #e60a15;
+    font-size: 120px;
+    font-weight: 700;
+}
+
+#startingfont{
+    color: whitesmoke;
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+/* col 2 content */
+#col2{
+    height: 100%;
+    background-color: black;
+}
+
+.imgdiv{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    height: 12.5em;
+}
+
+/* row 2 */
+#col3{
+    display: flex;
+    flex-direction: column;
+    padding: 40px; 
+    background-color: black;
+    gap: 2rem;
+}
+
+/* col3 content */
+.project{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subheading{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.project > p{
+    text-align: center;
+} 
+
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.link-style{
+    font-weight: 600;
+    background-color: #e60a15;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+/* col4 content */
+#col4{
+    /* border: solid royalblue 5px; */
+    background-color: black;
+    padding: 20px;
+}
+
+.page-details{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align:center;
+    height: 100%;
+}
+
+.page-details > h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Common */
+*{
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.col{
+    border-radius: 15px;
+}
+
+:root {
+    --clr-neutral-800: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--clr-neutral-800);
+}
+
+/* Layout for smaller devices like ipads and mobile phones */
+@media (max-width: 1023px) {
+    /* Common */
+    :root {
+        --clr-neutral-800: hsl(0, 0%, 8%);
+    }
+    
+    body {
+        background-color: var(--clr-neutral-800);
+    }
+
+    *{
+        margin: 0px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 20px;
+        color: whitesmoke;
+    }
+    
+    .col{
+        border-radius: 15px;
+    }
+
+    /* Layout */
+
+    /* Header */
+
+    .container2{
+        padding: 0px;
+        /* position: fixed;
+        gap: 1.5rem;
+        bottom: -8.5rem;
+        inset-inline: 0;
+        margin: 0;
+        padding-bottom: 10rem; */
+    }
+
+    .container2 ul{
+        border-radius: 0px;
+    }
+
+    .navigation-bar ul{
+        position: fixed;
+        bottom: -8.5rem;
+        inset-inline: 0;
+        margin: 0;
+        padding-bottom: 10rem;
+    }
+
+    #home{
+        font-size: 12px;
+    }
+
+    #home > i{
+        font-size: 12px;
+    }
+
+    .icons{
+        font-size: 14px;
+    }
+
+    .icons > i{
+        font-size: 16px;
+    }
+
+    /* Main */
+    .container{
+        gap: 0.7rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    /* Main Layout first part */
+    #row1{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .7fr 1fr;
+        gap: 0.7rem;
+        align-items: center;
+    }
+
+    /* Main Layout second part */
+    #row2{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .7fr;
+        gap: 0.7rem;
+    }
+
+    /* row 1 */
+
+    /* col 1 content */
+    #col1 div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        background-color: black;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        border-radius: 15px;
+    }
+
+    span{
+        color: #e60a15;
+        font-size: 90px;
+        font-weight: 700;
+    }
+
+    #startingfont{
+        color: whitesmoke;
+        font-size: 2.5em;
+        font-weight: 700;
+    }
+
+    /* col 2 content */
+    #col2{
+        height: 100%;
+        background-color: black;
+    }
+
+    .imgdiv{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image{
+        height: 12.5em;
+    }
+    
+    /* row 2 */
+    #col3{
+        display: grid;
+        grid-row-start: 2;
+        padding: 40px; 
+        background-color: black;
+        gap: 1rem;
+    }
+
+    /* col3 content */
+    .project{
+        display: grid;
+        gap: 1rem;
+    }
+
+    .paragraph{
+        font-size: 16px;
+    }
+
+    .button{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .button{
+        display: grid;
+        gap: 1rem;
+    }
+
+    .link-style{
+        font-weight: 600;
+        background-color: #e60a15;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: .5rem;
+        font-size: 16px;
+    }
+}
