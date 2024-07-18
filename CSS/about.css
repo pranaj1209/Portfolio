@@ -1,0 +1,186 @@
+/* Common */
+*{
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: whitesmoke;
+    list-style-type: none;
+}
+
+:root {
+    --clr-neutral-800: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--clr-neutral-800);
+}
+
+/* Layout for bigger devices like laptop different screen sizes */
+
+/* Layout */
+
+/* Header */
+
+.container{
+    padding: 1rem;
+}
+
+/* list */
+.container .navigation-bar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.7rem;
+    padding: 5px 0px;
+    border-radius: 1.2rem;
+    background-color: black;
+}
+
+.icons{
+    text-decoration: none;
+    display: flex;
+    gap: .5rem;
+}
+
+#about{
+    background-color: #e60a15;
+    font-weight: 600;
+    padding: .4rem;
+    border-radius: 1.2rem;
+}
+
+/* Main */
+.main-container{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    padding-bottom: 3.7rem;
+}
+
+/* row - one */
+.row-one{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+}
+
+/* common structure  for columns */
+.col{
+    border-radius: 1rem;
+    opacity: 1;
+    padding: 1.5rem 1.3rem;
+    background-color: black;
+}
+
+.col-structure{
+    display: grid;
+    gap: 1.5rem;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+/* col-one */
+
+/* col-one image */
+.col-structure > img{
+    height: 100%;
+    width: 100%;
+}
+
+/* col-two */
+.col-two .col-structure h1{
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+
+/* row - two */
+.row-two{
+    display: grid;
+    gap: 1rem;
+}
+
+.row-two .col-one .col-structure p{
+    font-weight: 400;
+    text-align: left;
+}
+
+/* Layout for smaller devices like ipads and mobile phones */
+@media (max-width: 1023px) {
+    /* Layout */
+
+    /* Header */
+    .container{
+        padding: .5rem;
+    }
+
+    /* list */
+    .container .navigation-bar ul{
+        position: fixed;
+        bottom: 0rem;
+        width: 100%;
+        left: 0rem;
+        right: 0rem;
+        border-radius: 0px;
+    }   
+    
+    .icons{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    
+    #about{
+        text-decoration: none;
+        background-color: #e60a15;
+        font-weight: 600;
+        padding: .4rem;
+        border-radius: 100%;
+    }
+
+    .icons-text{
+        font-size: .79rem;
+    }
+
+    /* Main */
+    .main-container{
+        gap: .7rem;
+    }
+
+    /* row - one */
+    .row-one{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .2fr;
+        gap: .7rem;
+    }
+
+    .row-one .col-one .col-structure img{
+        width: 50%;
+        height: 70%;
+    }
+
+    /* row - two */
+    .row-two{
+        gap: .7rem;
+    }
+
+}
+
+/* Add margin when screen size is greater than 1440px or max-width */
+@media (min-width: 1200px){
+    .layout-grid{
+        display: grid;
+        justify-content: space-around;
+    }
+
+    .container{
+        max-width: 1200px;
+    }
+
+    .main-container{
+        max-width: 1200px;
+    }
+}
