@@ -1,0 +1,15 @@
+https://portfolio-blazeshomida.vercel.app/
+strict mode
+hoisting
+closure
+arrow function
+data types
+callback
+promise 
+async await
+array string methods
+let const var
+this
+function types
+
+dom
